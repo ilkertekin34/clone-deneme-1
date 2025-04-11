@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .table{
+        .table {
             align-items: center;
             display: flex;
         }
-        .input{
-            margin: 1%;  
+
+        .x {
+            margin: 1%;
             width: 96%;
             display: inline;
-            align-self:center;
+            align-self: center;
         }
-        .xxx
-            {
-                margin: 1%;
-                width: 30%;
-                display: inline;
-                align-items: justify;
-            }
-            .xx
-            {
-                margin: 1%;
-                width: 47%;
-                display: inline;
-                align-items:justify;
-            }
+
+        .xxx {
+            margin: 1%;
+            width: 30%;
+            display: inline;
+            align-items: justify;
+        }
+
+        .xx {
+            margin: 1%;
+            width: 47%;
+            display: inline;
+            align-items: justify;
+        }
     </style>
 </head>
+
 <body>
     <div style="border: solid;">
-    <div style="display: block; border:outset ;"><h1>BILLING INFO</h1></div>
-    <table class="table">
-        <input class="input" type="text"id="card" placeholder="Card#" >     
-        <div>
-       <input class="xxx" type="text"  id="ay" placeholder="Month"> 
-        <input class="xxx"  type="text"  id="yıl" placeholder="Year">
-        <input class="xxx"    type="number"id="cvv" placeholder="cvv" >
+        <div style="display: block; border:outset ;">
+            <h1>BILLING INFO</h1>
+        </div>
+        <table class="table">
+            <input class="x" type="text" id="card" placeholder="Card#">
+            <div>
+                <input class="xxx" type="text" id="ay" placeholder="Month">
+                <input class="xxx" type="text" id="yıl" placeholder="Year">
+                <input class="xxx" type="number" id="cvv" placeholder="cvv">
+            </div>
+            <div>
+                <input class="xx" type="text" id="ad" placeholder="First Name">
+                <input class="xx" type="text" id="soyad" placeholder="Last Name">
+            </div>
+            <div>
+                <input class="input" type="text" id="aders1" placeholder="Address1">
+                <input class="input" type="text" id="adres2" placeholder="Address2(optional)">
+            </div>
+            <div>
+                <input class="xx" type="text" id="dosya" placeholder="Zip">
+                <input class="xx" type="text" id="şehir" placeholder="City">
+            </div>
+            <div>
+                <input class="xx" type="text" id="ülke" placeholder="Country">
+                <input class="xx" type="text" id="durum" placeholder="state">
+            </div>
+            <div>
+                <input class="input" type="email" id="mail" placeholder="Email(required)">
+            </div>
+            <div>
+                <input type="checkbox" id="onay">
+                <label>Use above info for shipping</label>
+                <button id="devam">Contınue></button>
+            </div>
+        </table>
     </div>
-    <div>
-    <input class="xx" type="text" id="ad"placeholder="First Name">
-    <input class="xx" type="text" id="soyad"placeholder="Last Name">
-    </div>
-    <div>
-        <input class="input" type="text"id="aders1" placeholder="Address1" >
-        <input class="input" type="text"id="adres2" placeholder="Address2(optional)" >
-    </div>
-    <div>
-        <input class="xx" type="text" id="ad"placeholder="First Name">
-        <input class="xx" type="text" id="soyad"placeholder="Last Name">
-    </div>
-    </table>
-</div>
 </body>
+
 </html>
