@@ -8,28 +8,29 @@
     <style>
         .table {
             align-items: center;
-            display: flex;
+            display: flex; 
+            justify-content: center;
+            height: 100vh;
         }
 
         .x {
             margin: 1%;
-            width: 96%;
-            display: inline;
+            width: 100%;
+            display: flex;
             align-self: center;
         }
 
         .xxx {
             margin: 1%;
-            width: 30%;
-            display: inline;
-            align-items: justify;
+            width: 100%;
+            align-self: center;
+            display: flex;
         }
 
         .xx {
             margin: 1%;
             width: 47%;
-            display: inline;
-            align-items: justify;
+
         }
     </style>
 </head>
@@ -41,29 +42,29 @@
         </div>
         <table class="table">
             <input class="x" type="text" id="card" placeholder="Card#">
-            <div>
-                <input class="xxx" type="text" id="ay" placeholder="Month">
-                <input class="xxx" type="text" id="yıl" placeholder="Year">
-                <input class="xxx" type="number" id="cvv" placeholder="cvv">
+            <div class="xxx">
+                <input type="text" id="ay" placeholder="Month">
+                <input   type="text" id="yıl" placeholder="Year">
+                <input  type="number" id="cvv" placeholder="cvv">
             </div>
             <div>
-                <input class="xx" type="text" id="ad" placeholder="First Name">
-                <input class="xx" type="text" id="soyad" placeholder="Last Name">
+                <input  type="text" id="ad" placeholder="First Name">
+                <input  type="text" id="soyad" placeholder="Last Name">
             </div>
             <div>
-                <input class="input" type="text" id="aders1" placeholder="Address1">
-                <input class="input" type="text" id="adres2" placeholder="Address2(optional)">
+                <input  type="text" id="aders1" placeholder="Address1">
+                <input  type="text" id="adres2" placeholder="Address2(optional)">
             </div>
             <div>
-                <input class="xx" type="text" id="dosya" placeholder="Zip">
-                <input class="xx" type="text" id="şehir" placeholder="City">
+                <input  type="text" id="dosya" placeholder="Zip">
+                <input  type="text" id="şehir" placeholder="City">
             </div>
             <div>
-                <input class="xx" type="text" id="ülke" placeholder="Country">
-                <input class="xx" type="text" id="durum" placeholder="state">
+                <input  type="text" id="ülke" placeholder="Country">
+                <input  type="text" id="durum" placeholder="state">
             </div>
             <div>
-                <input class="input" type="email" id="mail" placeholder="Email(required)">
+                <input  class="x" type="email" id="mail" placeholder="Email(required)">
             </div>
             <div>
                 <input type="checkbox" id="onay">
