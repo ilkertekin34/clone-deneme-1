@@ -1,78 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0057)file:///C:/Users/eba%20pc/Desktop/copya%20deneme%202.html -->
+<html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .table {
-            align-items: center;
-            display: flex; 
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .x {
-            margin: 1%;
-            width: 100%;
-            display: flex;
-            align-self: center;
-        }
-
-        .xxx {
-            margin: 1%;
-            width: 100%;
-            align-self: center;
-            display: flex;
-        }
-
-        .xx {
-            margin: 1%;
-            width: 47%;
-
-        }
-    </style>
+    <title>Clone deneme 1</title>
+    <style></style>
 </head>
 
 <body>
-    <div style="border: solid;">
-        <div style="display: block; border:outset ;">
-            <h1>BILLING INFO</h1>
+    <div style="display: flex; border:solid ; flex-direction: column; justify-self:  center;">
+        <div style=" border: outset; ">
+            <h2>BILLING INFO</h2>
         </div>
-        <table class="table">
-            <input class="x" type="text" id="card" placeholder="Card#">
-            <div class="xxx">
-                <input type="text" id="ay" placeholder="Month">
-                <input   type="text" id="yıl" placeholder="Year">
-                <input  type="number" id="cvv" placeholder="cvv">
+
+        <div style="margin: 10px; ">
+            <div style=" width: 100%; display: flex;">
+                <input type="text" id="card" placeholder="Card" style="width: 100%;">
             </div>
-            <div>
-                <input  type="text" id="ad" placeholder="First Name">
-                <input  type="text" id="soyad" placeholder="Last Name">
+            <div style=" width: 100%; display: flex;  justify-self: center; margin: 10px;">
+                <input type="text" id="ay" placeholder="Ay" style="width: 33%;">
+                <input type="text" id="yıl" placeholder="Yıl" style="width: 33%;">
+                <input type="number" id="cvv" placeholder="CVV" style="width: 34%;">
             </div>
-            <div>
-                <input  type="text" id="aders1" placeholder="Address1">
-                <input  type="text" id="adres2" placeholder="Address2(optional)">
+            <div style="display: flex; width: 100%; justify-self: center; margin: 10px; ">
+                <input type="text" id="ad" placeholder="First Name" style="width: 100%;">
+                <input type="text" id="soyad" placeholder="Last Name" style="width: 100%;">
             </div>
-            <div>
-                <input  type="text" id="dosya" placeholder="Zip">
-                <input  type="text" id="şehir" placeholder="City">
+            <div style=" width: 100%; display: flex; justify-self: center; margin: 10px;">
+                <input type="text" id="adres" placeholder="Address1" style="width: 100%;">
             </div>
-            <div>
-                <input  type="text" id="ülke" placeholder="Country">
-                <input  type="text" id="durum" placeholder="state">
+            <div style=" width: 100%; display: flex; justify-self: center; margin: 10px;">
+                <input type="text" id="ades2" placeholder="Address2" style="width: 100%;">
             </div>
-            <div>
-                <input  class="x" type="email" id="mail" placeholder="Email(required)">
+            <div style="display: flex; width: 100%; justify-self: center; margin: 10px;">
+                <input type="text" id="zip" placeholder="Zip" style="width: 100%;">
+                <input type="text" id="sehir" placeholder="City" style="width: 100%;">
             </div>
-            <div>
-                <input type="checkbox" id="onay">
-                <label>Use above info for shipping</label>
-                <button id="devam">Contınue></button>
+            <div style="display: flex; width: 100%; justify-self: center; margin: 10px;">
+                <input type="text" id="ülke" placeholder="Türkiye" style="width: 100%; ">
+                <input type="text" id="durum" placeholder="State" style="width: 100%;">
             </div>
-        </table>
+            <div style=" display: flex; align-items: center;">
+                <input type="email" id="email" placeholder="Email" style="width: 100%;">
+            </div>
+            <div style="display: flex;  margin: 10px;">
+                <div style="display: flex; align-items: start; ">
+                    
+                    <input type="checkbox">
+                    <label>Use above info for shipping</label>
+                    
+                </div>
+                <div style="margin: 10px; float: right;">
+                    <button >
+                        CONTİNUE
+                    </button>
+                </div>
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>
