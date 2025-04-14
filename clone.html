@@ -64,83 +64,87 @@
     </div>
     <div id="snackbar" style="display: none;">BOŞ ALANLARI DOLDURUNUZ..</div>
     <script>
+        function cheknull(value)
+        {
+           return value==undefined || value == null || value == "";
+            
+        }
+        function displayblock(param)
+        {
+                // divi aldın 
+                //divin inner html param ekledin
+                //display block yaptın.
+                //settimeout ekledin
+                document.getElementById("snackbar").innerHTML("alanını doldurunuz")
+              return setTimeout(snackbar.display="block",3000)                  
+        }
         function writejson(){
 
             JSON.card= document.getElementById("card").value;
-            if( JSON.card==0)
-        {
-            var x=document.getElementById("snackbar");
-            x.style.display.block;
-        }
+            if(cheknull(card))
+            {
+                displayblock(card)
+            }
+           
+      }
 
         JSON.ay= document.getElementById("ay").value;
             if( JSON==0)
         {
-            alert("AY kısmını boş bırakmayınız")
         }
         JSON.yıl= document.getElementById("yıl").value;
             if( JSON==0)
         {
-            alert("Yıl kısmını boş bırakmayızınız")
         }
 
         JSON.cvv= document.getElementById("cvv").value;
             if( JSON==0)
         {
-            alert("CVV kısmını boş bırakmayızınız")
         }
 
         JSON.ad= document.getElementById("ad").value;
             if( JSON==0)
         {
-            alert("AD kısmını boş bırakmayızınız")
         }
 
         JSON.soyad= document.getElementById("soyad").value;
             if( JSON==0)  
         {
-            alert("SOYAD kısmını boş bırakmayızınız")
         }
 
         JSON.adress1= document.getElementById("adress1").value;
             if( JSON==0)
         {
-            alert("Adress kısmını boş bırakmayızınız")
         }
 ;
         JSON.adress2= document.getElementById("adress2").value;
             if( JSON==0)
         {
-            alert("  adress2 kısmını boş bırakmayızınız")
+ 
         }
 
         JSON.zip= document.getElementById("zip").value;
             if( JSON==0)
         {
-            alert("Zip kısmını boş bırakmayızınız")
         }
   
         JSON.sehir= document.getElementById("sehir").value;
             if( JSON==0)
         {
-            alert("City kısmını boş bırakmayızınız")
         }
     
         JSON.ülke= document.getElementById("ülke").value;
             if( JSON==0)
         {
-            alert("Ülke kısmını boş bırakmayızınız")
         }
         
         JSON.durum= document.getElementById("durum").value;
             if( JSON==0)
         {
-            alert("State kısmını boş bırakmayızınız")
         }
         JSON.email= document.getElementById("email").value;
             if( JSON==0)
         {
-            alert("Email kısmını boş bırakmayızınız")
         }
         else console.log(JSON);
 
@@ -153,7 +157,7 @@
 
 
 
-        }
+
     </script>
 </body>
 
