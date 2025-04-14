@@ -18,7 +18,7 @@
 
         <div style="margin: 10px; ">
             <div style=" width: 100%; display: flex;">
-                <input type="text" id="card" placeholder="Card" style="width: 100%;">
+                <input type="number" id="card" placeholder="Card" style="width: 100%;">
             </div>
             <div style=" width: 100%; display: flex;  justify-self: center; margin: 10px;">
                 <input type="text" id="ay" placeholder="Ay" style="width: 33%;">
@@ -30,10 +30,10 @@
                 <input type="text" id="soyad" placeholder="Last Name" style="width: 100%;">
             </div>
             <div style=" width: 100%; display: flex; justify-self: center; margin: 10px;">
-                <input type="text" id="adres" placeholder="Address1" style="width: 100%;">
+                <input type="text" id="adress1" placeholder="Address1" style="width: 100%;">
             </div>
             <div style=" width: 100%; display: flex; justify-self: center; margin: 10px;">
-                <input type="text" id="ades2" placeholder="Address2" style="width: 100%;">
+                <input type="text" id="adress2" placeholder="Address2" style="width: 100%;">
             </div>
             <div style="display: flex; width: 100%; justify-self: center; margin: 10px;">
                 <input type="text" id="zip" placeholder="Zip" style="width: 100%;">
@@ -48,13 +48,13 @@
             </div>
             <div style="display: flex;  margin: 10px;">
                 <div style="display: flex; align-items: start; ">
-                    
+
                     <input type="checkbox">
                     <label>Use above info for shipping</label>
-                    
+
                 </div>
                 <div style="margin: 10px; float: right;">
-                    <button >
+                    <button onclick="writejson()">
                         CONTİNUE
                     </button>
                 </div>
@@ -62,7 +62,99 @@
 
         </div>
     </div>
+    <div id="snackbar" style="display: none;">BOŞ ALANLARI DOLDURUNUZ..</div>
+    <script>
+        function writejson(){
 
+            JSON.card= document.getElementById("card").value;
+            if( JSON.card==0)
+        {
+            var x=document.getElementById("snackbar");
+            x.style.display.block;
+        }
+
+        JSON.ay= document.getElementById("ay").value;
+            if( JSON==0)
+        {
+            alert("AY kısmını boş bırakmayınız")
+        }
+        JSON.yıl= document.getElementById("yıl").value;
+            if( JSON==0)
+        {
+            alert("Yıl kısmını boş bırakmayızınız")
+        }
+
+        JSON.cvv= document.getElementById("cvv").value;
+            if( JSON==0)
+        {
+            alert("CVV kısmını boş bırakmayızınız")
+        }
+
+        JSON.ad= document.getElementById("ad").value;
+            if( JSON==0)
+        {
+            alert("AD kısmını boş bırakmayızınız")
+        }
+
+        JSON.soyad= document.getElementById("soyad").value;
+            if( JSON==0)  
+        {
+            alert("SOYAD kısmını boş bırakmayızınız")
+        }
+
+        JSON.adress1= document.getElementById("adress1").value;
+            if( JSON==0)
+        {
+            alert("Adress kısmını boş bırakmayızınız")
+        }
+;
+        JSON.adress2= document.getElementById("adress2").value;
+            if( JSON==0)
+        {
+            alert("  adress2 kısmını boş bırakmayızınız")
+        }
+
+        JSON.zip= document.getElementById("zip").value;
+            if( JSON==0)
+        {
+            alert("Zip kısmını boş bırakmayızınız")
+        }
+  
+        JSON.sehir= document.getElementById("sehir").value;
+            if( JSON==0)
+        {
+            alert("City kısmını boş bırakmayızınız")
+        }
+    
+        JSON.ülke= document.getElementById("ülke").value;
+            if( JSON==0)
+        {
+            alert("Ülke kısmını boş bırakmayızınız")
+        }
+        
+        JSON.durum= document.getElementById("durum").value;
+            if( JSON==0)
+        {
+            alert("State kısmını boş bırakmayızınız")
+        }
+        JSON.email= document.getElementById("email").value;
+            if( JSON==0)
+        {
+            alert("Email kısmını boş bırakmayızınız")
+        }
+        else console.log(JSON);
+
+
+
+
+
+
+
+
+
+
+        }
+    </script>
 </body>
 
 </html>
