@@ -71,85 +71,39 @@
         }
         function displayblock(param)
         {
-                // divi aldın 
-                //divin inner html param ekledin
-                //display block yaptın.
-                //settimeout ekledin
-                document.getElementById("snackbar").innerHTML("alanını doldurunuz")
-              return setTimeout(snackbar.display="block",3000)                  
+                 let snackbar = document.getElementById("snackbar");
+                 snackbar.innerHTML = param +"alanını doldurunuz";
+                snackbar.style.display="block"
+             setTimeout(()=>{
+                snackbar.style.display="none"},3000)
         }
         function writejson(){
 
-            JSON.card= document.getElementById("card").value;
-            if(cheknull(card))
-            {
-                displayblock(card)
-            }
-           
-      }
-
+        JSON.card= document.getElementById("card").value;
         JSON.ay= document.getElementById("ay").value;
-            if( JSON==0)
-        {
-        }
         JSON.yıl= document.getElementById("yıl").value;
-            if( JSON==0)
-        {
-        }
-
         JSON.cvv= document.getElementById("cvv").value;
-            if( JSON==0)
-        {
-        }
-
         JSON.ad= document.getElementById("ad").value;
-            if( JSON==0)
-        {
-        }
-
-        JSON.soyad= document.getElementById("soyad").value;
-            if( JSON==0)  
-        {
-        }
-
+        JSON.soyad= document.getElementById("soyad").value; 
         JSON.adress1= document.getElementById("adress1").value;
-            if( JSON==0)
-        {
-        }
-;
         JSON.adress2= document.getElementById("adress2").value;
-            if( JSON==0)
-        {
- 
-        }
-
         JSON.zip= document.getElementById("zip").value;
-            if( JSON==0)
-        {
-        }
-  
         JSON.sehir= document.getElementById("sehir").value;
-            if( JSON==0)
-        {
-        }
-    
         JSON.ülke= document.getElementById("ülke").value;
-            if( JSON==0)
-        {
-        }
-        
         JSON.durum= document.getElementById("durum").value;
-            if( JSON==0)
-        {
-        }
         JSON.email= document.getElementById("email").value;
-            if( JSON==0)
+
+            for(let i=0;writejson()<=i;i++)
+           {
+                
+            }
+        if(cheknull(JSON.card))
         {
+            displayblock("kart")
         }
-        else console.log(JSON);
+         else console.log(JSON);
 
-
-
+        }
 
 
 
