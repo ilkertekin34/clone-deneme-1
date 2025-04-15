@@ -54,15 +54,32 @@
 
                 </div>
                 <div style="margin: 10px; float: right;">
+                    
                     <button onclick="writejson()">
+                        
+                        
+                        
                         CONTİNUE
                     </button>
+                    
                 </div>
             </div>
 
         </div>
     </div>
-    <div id="snackbar" style="display: none;">BOŞ ALANLARI DOLDURUNUZ..</div>
+    <div id="snackbar" style="display: none; min-width: 250px;
+    margin-left: -125px;
+    background-color: #323232;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    bottom: 30px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);"></div>
     <script>
         function cheknull(value)
         {
@@ -72,10 +89,10 @@
         function displayblock(param)
         {
                  let snackbar = document.getElementById("snackbar");
-                 snackbar.innerHTML = param +"alanını doldurunuz";
+                 snackbar.innerHTML = param +" alanını doldurunuz";
                 snackbar.style.display="block"
              setTimeout(()=>{
-                snackbar.style.display="none"},3000)
+                snackbar.style.display="none"},5000)
         }
         function writejson(){
 
@@ -93,17 +110,62 @@
         JSON.durum= document.getElementById("durum").value;
         JSON.email= document.getElementById("email").value;
 
-            for(let i=0;writejson()<=i;i++)
-           {
-                
-            }
+            
         if(cheknull(JSON.card))
         {
             displayblock("kart")
         }
-         else console.log(JSON);
-
+        else if(cheknull(JSON.ay))
+        {
+            displayblock("ay")
         }
+        else if(cheknull(JSON.yıl))
+        {
+            displayblock("yıl")
+        }
+        else if(cheknull(JSON.cvv))
+        {
+            displayblock("cvv")
+        }
+        else if(cheknull(JSON.ad))
+        {
+            displayblock("ad")
+        }
+        else if(cheknull(JSON.soyad))
+        {
+            displayblock("soyad")
+        }
+        else if(cheknull(JSON.adress1))
+        {
+            displayblock("adress1")
+        }
+        else if(cheknull(JSON.adress2))
+        {
+            displayblock("adress2")
+        }
+        else if(cheknull(JSON.zip))
+        {
+            displayblock("zip")
+        }
+        else if(cheknull(JSON.sehir))
+        {
+            displayblock("sehir")
+        }
+        else if(cheknull(JSON.ülke))
+        {
+            displayblock("ülke")
+        }
+        else if(cheknull(JSON.durum))
+        {
+            displayblock("state")
+        }
+        else if(cheknull(JSON.email))
+        {
+            displayblock("email")
+        }
+         else {console.log(JSON); window.location.href="clonedevam.html"}
+
+    }
 
 
 
